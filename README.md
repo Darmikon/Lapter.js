@@ -1,13 +1,14 @@
-## **Lapter.js**
+#**Lapter.js**
 ======
+##**Javascript adapter to work with localStorage**
 
-Javascript adapter to work with localStorage
-
-### **API**
+###**API:**
 
 **namespace()**
 
-	 default: 'lapter' - namespace for single application - just propery in localStorage - will contain singleton object to storage data of one applicaton
+	 default: 'lapter' - namespace for single application - 
+     just propery in localStorage
+     will contain singleton object to storage data of one applicaton
 	`Lapter.namespace('my_storage');`
     
 
@@ -19,7 +20,8 @@ Javascript adapter to work with localStorage
 
 **getId()**
 
-	Get uniq id for Lapter in given Lapter namespace. May be usefull to destroy previous Lapter
+	Get uniq id for Lapter in given Lapter namespace. 
+    May be usefull to destroy previous Lapter
     `Lapter.getId()`
     
 
@@ -47,7 +49,7 @@ Javascript adapter to work with localStorage
 	Lapter.clear('test_model');
     
 
-**remove()**
+**remove**
 
 	Delete property from Lapter
     `Lapter.remove('test_model');`
@@ -56,4 +58,4 @@ Javascript adapter to work with localStorage
  **hardReset()**
 
  	Delete Lapter namespace and all data from localStorage
- 	Lapter.hardReset();
+ 	Lapter.hardReset();        
