@@ -1,59 +1,59 @@
-## **Lapter**
+## **Lapter.js**
 ======
 
 Javascript adapter to work with localStorage
 
 API:
 
-**namespace**
+**namespace()**
 
 	 default: 'lapter' - namespace for single application - just propery in localStorage - will contain singleton object to storage data of one applicaton
 	`Lapter.namespace('my_storage');`
     
 
-**setId**
+**setId()**
 
 	Set time or session_id mark to current localStorage Lapter in given namespace
     `Lapter.setId(3);`
 
 
-**getId**
+**getId()**
 
 	Get uniq id for Lapter in given Lapter namespace. May be usefull to destroy previous Lapter
     `Lapter.getId()`
     
 
-**add**
+**add()**
 
 	Add javasctipt object to Lapter object (Backbone model as json for example)
 	`Lapter.add('test_model');`
     
 
-**set**
+**set()**
 
 	Set new data to existing Lapter property (rewrite)
 	`Lapter.set('test_model',{data:[1,2,3,4,5]});`
     
 
-**get**
+**get()**
 
 	Get object from Lapter
     `Lapter.get('test_model');`
     
 
-**clear**
+**clear()**
 
 	Erase data from property in localStorage
 	Lapter.clear('test_model');
     
 
-**remove**
+**remove()**
 
 	Delete property from Lapter
     `Lapter.remove('test_model');`
     
 
- **hardReset**
+ **hardReset()**
 
  	Delete Lapter namespace and all data from localStorage
  	Lapter.hardReset();
