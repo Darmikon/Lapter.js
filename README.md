@@ -3,7 +3,7 @@
 
 Javascript adapter to work with localStorage
 
-API:
+### **API**
 
 **namespace()**
 

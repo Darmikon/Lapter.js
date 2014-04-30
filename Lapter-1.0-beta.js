@@ -20,7 +20,7 @@
 
 define([], function(){	
 	var Lapter={
-                id:5,
+                id:null,
                 setId:function (id){
                     var lapter=JSON.parse(localStorage.getItem(this._lapter));
                     if(lapter){
@@ -32,7 +32,7 @@ define([], function(){
                 getId:function (){
                     var lapter=JSON.parse(localStorage.getItem(this._lapter));
                     if(lapter){
-                            return lapter.id;
+                            return lapter.id||"";
                     }else{
                             return false;
                     }
