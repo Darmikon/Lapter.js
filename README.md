@@ -49,7 +49,7 @@
 	Lapter.clear('test_model');
     
 
-**remove**
+**remove()**
 
 	Delete property from Lapter
     `Lapter.remove('test_model');`
